@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+#todoForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#todoForm input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#todoForm button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+#todoForm button:hover {
+    background-color: #218838;
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+#todoList li.completed .title {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-text {
+    flex: 1;
+    margin-left: 8px;
+    text-align: left;
+}
+
+.delete-btn {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
